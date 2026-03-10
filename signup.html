@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="../index.html"><b>Home</b></a>
+      <a href="signup.html"><b>Sign UP</b></a>
+      <h1>Sign Up</h1>
+    </nav>
+
+    <!-- Task 6: Sign Up Form -->
+    <form action="../results.html" method="GET">
+
+      <fieldset>
+        <legend>Demographic Info</legend>
+
+        <label>
+          Full Name
+          <input type="text" placeholder="Enter your name" name="fullname" />
+        </label>
+
+        <br />
+
+        <label>
+          Sex
+          <select name="sex">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+          </select>
+        </label>
+
+        <br />
+
+        <label for="dob">Date Of Birth</label>
+        <input type="date" value="2000-01-01" name="dob" id="dob" />
+
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Info</legend>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="Enter your email" />
+        </label>
+
+        <br />
+
+        <label>
+          County
+          <input list="counties" name="county" placeholder="Select a county" />
+          <datalist id="counties">
+            <option value="Caroni"></option>
+            <option value="Mayaro"></option>
+            <option value="Nariva"></option>
+            <option value="Saint Andrew"></option>
+            <option value="Saint David"></option>
+            <option value="Saint George"></option>
+            <option value="Saint Patrick"></option>
+            <option value="Victoria"></option>
+          </datalist>
+        </label>
+
+        <br />
+
+        <label>
+          Telephone
+          <input type="tel" name="telephone" placeholder="Enter your phone number" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Courses</legend>
+
+        <label>
+          <input type="checkbox" name="courses" value="info1601" checked />
+          <span>INFO 1601</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1602" />
+          <span>COMP 1602</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1603" />
+          <span>COMP 1603</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1604" />
+          <span>COMP 1604</span>
+        </label>
+
+      </fieldset>
+
+      <br />
+      <input type="submit" value="Sign Up" />
+    </form>
+
+  </body>
+</html>
